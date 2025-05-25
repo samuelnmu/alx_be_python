@@ -1,6 +1,5 @@
 class hoursToSeconds:
     hours = 2
-    secondsInHr = 3600
     
-    answer = hours * secondsInHr
+    answer = hours * 3600
     print(hours, "hours(s) is ", answer,"seconds.")
