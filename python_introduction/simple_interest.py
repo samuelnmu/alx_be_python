@@ -1,9 +1,9 @@
 class intrestRate:
     #formula = (I = P * R * T)
-    r = 0.05 #intrest rate
-    p = 1000 #principal amout rep $1000
-    t = 3 #time rep 3 yrs
+    rate = 0.05 #intrest rate
+    principal = 1000 #principal amout rep $1000
+    time = 3 #time rep 3 yrs
     
-    intrest = (p * r * t)
+    intrest = (principal * rate * time)
     print("The simple intrest is: ", intrest)
 
