@@ -1,14 +1,14 @@
 #Finance Calclator
 class financeCalculation:
-    income = int(input("Enter your monthly income: "))
-    expenses = int(input("Enter your total monthly expenses: "))
+    income = float(input("Enter your monthly income: "))
+    expenses = float(input("Enter your total monthly expenses: "))
     
-    savings = income - expenses
-    interest = 0.05
+    monthlySavings = income - expenses
+    interestRate = 0.05
     
     #(Projected Savings = Monthly Savings * 12 + (Monthly Savings * 12 * 0.05))
-    projectedSavings = savings * 12 + (savings * 12 * interest)
+    projectedSavings = monthlySavings * 12 + (monthlySavings * 12 * interestRate)
     
-    print("Your monthly savings are: ", "$",savings)
+    print("Your monthly savings are: ", "$",monthlySavings)
     print("Projected savings after one year, with interest, is: ", "$",projectedSavings)
     
