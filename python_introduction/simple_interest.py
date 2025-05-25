@@ -4,6 +4,6 @@ class intrestRate:
     principal = 1000 #principal amout rep $1000
     time = 3 #time rep 3 yrs
     
-    intrest = (principal * rate * time)
-    print("The simple intrest is: ", intrest)
+    interest = principal * rate * time
+    print("The simple intrest is: ", interest)
 
