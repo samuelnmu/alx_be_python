@@ -7,7 +7,7 @@ class Book:
         return f"Book: {self.title} by {self.author}"
 
 
-class Ebook(Book):
+class EBook(Book):
     def __init__(self, title="", author="", file_size=0):
         super().__init__(title, author)
         self.file_size = file_size
@@ -33,7 +33,7 @@ class Library:
         if isinstance(book, Book):
             self.books.append(book)
         else:
-            raise ValueError("Only Book or its subclasses are allowed.")
+            raise ValueError("Only instances of Book or its subclasses are allowed.")
 
     def list_books(self):
         for book in self.books:
